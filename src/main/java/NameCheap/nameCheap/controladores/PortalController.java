@@ -56,7 +56,7 @@ public class PortalController {
         if (csrfToken != null) {
             map.addAttribute("_csrf", csrfToken);
         }
-        return "index.html";
+        return "home.html";
     }
 
     @GetMapping("/portafolio")

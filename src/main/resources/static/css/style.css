@@ -254,7 +254,7 @@ button {
 .call_text{
      width: 100%;
      float: left;
-     font-size: 18px;
+     font-size: 10sspx;
      color: #b7990f;
 }
 .call_text a{
@@ -280,6 +280,7 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 20px;
     padding-left: 20px;
+    font-size:small;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -397,12 +398,12 @@ p.lorem_text {
 .carousel-indicators li {
     background-color: #fcfcfc;
     border: 0px; 
-    width: 25px;
+    width: 10px;
     height: 25px;
     border-radius: 25px;
 }
 .carousel-indicators { 
-     left: -105%;
+     left: 80%;
 }
 
 .about_section{
@@ -422,7 +423,7 @@ p.lorem_text {
 .unique_text{
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 60px;
     color: #f5cb0a;
     margin-left: 0px;
     font-weight: bold;
@@ -769,6 +770,28 @@ justify-content: center;
 .send_bt a:hover{
      background-color: #000;
      color: #fefeff;
+}
+.contact_section .map_container {
+  height: 450px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0;
+}
+
+.contact_section .map_container .map {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact_section .map_container .map #googleMap {
+  height: 100%;
 }
 
 .map_text {

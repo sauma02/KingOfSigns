@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
 --
--- Host: localhost    Database: kingofsigns
+-- Host: 127.0.0.1    Database: kingofsigns
 -- ------------------------------------------------------
--- Server version	8.0.34
+-- Server version	8.0.37
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -37,16 +37,6 @@ CREATE TABLE `imagen` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `imagen`
---
-
-LOCK TABLES `imagen` WRITE;
-/*!40000 ALTER TABLE `imagen` DISABLE KEYS */;
-INSERT INTO `imagen` VALUES (1,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,NULL),(2,'image/png','King_Of_Signs_Logo-removebg-preview.png','src\\main\\resources\\static\\img\\King_Of_Signs_Logo-removebg-preview.png',23651,NULL,NULL),(3,'image/png','King_Of_Signs_Logo-removebg-preview.png','src\\main\\resources\\static\\img\\King_Of_Signs_Logo-removebg-preview.png',23651,NULL,3),(52,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,52),(53,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,53),(54,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,54),(55,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,55),(56,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,56),(57,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,57),(58,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,58),(59,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,59),(60,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,60),(61,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,61),(62,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,62),(63,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,63),(64,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,64),(65,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,65),(66,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,66),(67,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,67),(69,'application/octet-stream','','src\\main\\resources\\static\\img',0,NULL,NULL);
-/*!40000 ALTER TABLE `imagen` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `imagen_seq`
 --
 
@@ -57,16 +47,6 @@ CREATE TABLE `imagen_seq` (
   `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `imagen_seq`
---
-
-LOCK TABLES `imagen_seq` WRITE;
-/*!40000 ALTER TABLE `imagen_seq` DISABLE KEYS */;
-INSERT INTO `imagen_seq` VALUES (151);
-/*!40000 ALTER TABLE `imagen_seq` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `informacion`
@@ -86,16 +66,6 @@ CREATE TABLE `informacion` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `informacion`
---
-
-LOCK TABLES `informacion` WRITE;
-/*!40000 ALTER TABLE `informacion` DISABLE KEYS */;
-INSERT INTO `informacion` VALUES (3,'','logo','logo','logo'),(52,'','email','Kingofsigns@comcast.net','email'),(53,'','address','2200 Castor Ave. Philadelphia, Pa. 19134','address'),(54,'','tel','215-289-9600','tel'),(55,'','banner','At King of Signs, we create custom signs tailored to your vision. Our expertise ensures top-quality, personalized solutions for all your signage needs.','ALL CUSTOM SIGNS'),(56,'','banner','Enhance your storefront with stylish and durable awnings. Custom-designed to provide both aesthetic appeal and practical protection from the elements.','AWNINGS'),(57,'','banner','Make a bold statement with our custom banners. Available in vinyl and fabric, perfect for promotions, events, and special occasions.','BANNERS'),(58,'','banner','Our vinyl and fabric signs offer versatile and vibrant options for any business or event. Durable, high-quality materials ensure long-lasting impact.','VINYL & FABRIC'),(59,'','banner','Stand out day and night with our illuminated signs. Perfect for businesses looking to attract attention with eye-catching lighting solutions.','ILLUMINATED SIGNS'),(60,'','banner','Transform your vehicles into mobile advertisements with our custom vehicle graphics. High-quality wraps and decals designed to turn heads on the road.','VEHICLE GRAPHICS'),(61,'','banner','Create a strong visual impact with channel letters. Perfect for storefronts, these 3D letters offer a professional and dynamic look.','CHANNEL LETTERS'),(62,'','banner','Stay ahead with our LED digital signs. Bright, dynamic, and easily programmable, they are perfect for conveying real-time information and promotions.','LED DIGITAL SIGNS'),(63,'','banner','Promote your business, event, or political campaign with our durable yard signs. Customizable and weather-resistant, ideal for outdoor visibility.','YARD SIGNS'),(64,'','banner','Make a grand statement with pylon signs. Towering and impactful, these signs are perfect for businesses seeking high visibility from a distance.','PYLON SIGNS'),(65,'','banner','Attract foot traffic with our sidewalk signs. Portable and eye-catching, they are perfect for displaying promotions and daily specials.','SIDEWALK SIGNS'),(66,'','banner','Versatile and removable, our magnetic signs are perfect for temporary promotions or branding on vehicles and metal surfaces.','MAGNETIC SIGNS'),(67,'','banner','Add a touch of elegance with our custom hanging signs. Ideal for boutiques, cafes, and more, offering a charming and professional appearance.','HANGING SIGNS');
-/*!40000 ALTER TABLE `informacion` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `informacion_imagen`
 --
 
@@ -113,16 +83,6 @@ CREATE TABLE `informacion_imagen` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `informacion_imagen`
---
-
-LOCK TABLES `informacion_imagen` WRITE;
-/*!40000 ALTER TABLE `informacion_imagen` DISABLE KEYS */;
-INSERT INTO `informacion_imagen` VALUES (3,3),(52,52),(53,53),(54,54),(55,55),(56,56),(57,57),(58,58),(59,59),(60,60),(61,61),(62,62),(63,63),(64,64),(65,65),(66,66),(67,67);
-/*!40000 ALTER TABLE `informacion_imagen` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `informacion_seq`
 --
 
@@ -133,16 +93,6 @@ CREATE TABLE `informacion_seq` (
   `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `informacion_seq`
---
-
-LOCK TABLES `informacion_seq` WRITE;
-/*!40000 ALTER TABLE `informacion_seq` DISABLE KEYS */;
-INSERT INTO `informacion_seq` VALUES (151);
-/*!40000 ALTER TABLE `informacion_seq` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `password_reset_token`
@@ -164,15 +114,6 @@ CREATE TABLE `password_reset_token` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `password_reset_token`
---
-
-LOCK TABLES `password_reset_token` WRITE;
-/*!40000 ALTER TABLE `password_reset_token` DISABLE KEYS */;
-/*!40000 ALTER TABLE `password_reset_token` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `password_reset_token_seq`
 --
 
@@ -183,16 +124,6 @@ CREATE TABLE `password_reset_token_seq` (
   `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `password_reset_token_seq`
---
-
-LOCK TABLES `password_reset_token_seq` WRITE;
-/*!40000 ALTER TABLE `password_reset_token_seq` DISABLE KEYS */;
-INSERT INTO `password_reset_token_seq` VALUES (1);
-/*!40000 ALTER TABLE `password_reset_token_seq` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `rol`
@@ -210,16 +141,6 @@ CREATE TABLE `rol` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `rol`
---
-
-LOCK TABLES `rol` WRITE;
-/*!40000 ALTER TABLE `rol` DISABLE KEYS */;
-INSERT INTO `rol` VALUES (1,NULL,'user'),(2,NULL,'admin');
-/*!40000 ALTER TABLE `rol` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `rol_seq`
 --
 
@@ -230,16 +151,6 @@ CREATE TABLE `rol_seq` (
   `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `rol_seq`
---
-
-LOCK TABLES `rol_seq` WRITE;
-/*!40000 ALTER TABLE `rol_seq` DISABLE KEYS */;
-INSERT INTO `rol_seq` VALUES (101);
-/*!40000 ALTER TABLE `rol_seq` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `usuario`
@@ -265,16 +176,6 @@ CREATE TABLE `usuario` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `usuario`
---
-
-LOCK TABLES `usuario` WRITE;
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'josedavids123@live.com','usuario','$2a$10$QMoZanZzpCdHLC8plt.PbO0pJtAidbWhUqWvbC4rVOzVU7SUpajAm','user',1,NULL),(2,'josedavids123@live.com','admin','$2a$10$6nEN1kFxSbHSJuBid4mv6.FYkWmusdaEIcWKli1ImVfVp7Qj4943W','admin',2,NULL);
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `usuario_seq`
 --
 
@@ -285,16 +186,6 @@ CREATE TABLE `usuario_seq` (
   `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `usuario_seq`
---
-
-LOCK TABLES `usuario_seq` WRITE;
-/*!40000 ALTER TABLE `usuario_seq` DISABLE KEYS */;
-INSERT INTO `usuario_seq` VALUES (101);
-/*!40000 ALTER TABLE `usuario_seq` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -305,4 +196,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-11 18:08:38
+-- Dump completed on 2024-07-14  2:24:31

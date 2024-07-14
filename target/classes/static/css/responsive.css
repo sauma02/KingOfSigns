@@ -149,7 +149,7 @@ width: 30%;
 .discount_bg::after { width: 30%; left: 35px; margin-top: -80px; }
 #main_slider a.carousel-control-next { display: none; }
 #main_slider a.carousel-control-prev { display: none; }
-.call_text { font-size: 16px; }
+.call_text { font-size: 10px; }
 .navbar-expand-lg .navbar-nav { width: 61%; }
 .appointment_bt a { width: 50%; }
 .achive_text { padding-top: 50px; }
@@ -162,7 +162,7 @@ width: 30%;
 .member_text { font-size: 27px; } 
 .social_icon ul { display: inline-block; }
 .social_icon { width: 100%; }
-.carousel-indicators { left: -98%; } 
+.carousel-indicators { left: 80%; } 
 
 
 
@@ -241,7 +241,7 @@ width: 30%;
 .social_icon ul { display: inline-block; } 
 .carousel-indicators li { display: none; }
 .call_text_left { padding-left: 3px;}
-.call_text { font-size: 12px; }
+.call_text { font-size: 10px; }
 
 
 
