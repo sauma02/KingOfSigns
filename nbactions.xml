@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
         <action>
-            <actionName>run.single.main</actionName>
-            <preAction>build-with-dependencies</preAction>
-            <packagings>
-                <packaging>*</packaging>
-            </packagings>
-            <goals>
-                <goal>process-classes</goal>
-                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
-            </goals>
-            <properties>
-                <exec.vmArgs></exec.vmArgs>
-                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.executable>java</exec.executable>
-                <exec.mainClass>${packageClassName}</exec.mainClass>
-                <exec.classpathScope>${classPathScope}</exec.classpathScope>
-                <J_MAIL>auroraSupport@auroramarblegranite.com</J_MAIL>
-                <J_MAIL_PASS>Supergamo123.</J_MAIL_PASS>
-                <DB_ADD>jdbc:mysql://srv1069.hstgr.io:3306/u949606062_aurora?zeroDateTimeBehavior=CONVERT_TO_NULL</DB_ADD>
-                <DB_USERNAME>u949606062_admin2</DB_USERNAME>
-                <DB_PASSWORD>Supergamo123.</DB_PASSWORD>
-                <SV_PORT>1012</SV_PORT>
-            </properties>
-        </action>
-        <action>
-            <actionName>rebuild</actionName>
-            <preAction>build-with-dependencies</preAction>
-            <packagings>
-                <packaging>*</packaging>
-            </packagings>
-            <goals>
-                <goal>clean</goal>
-                <goal>install</goal>
-            </goals>
-            <properties>
-                <J_MAIL>auroraSupport@auroramarblegranite.com</J_MAIL>
-                <J_MAIL_PASS>Supergamo123.</J_MAIL_PASS>
-                <DB_ADD>jdbc:mysql://srv1069.hstgr.io:3306/u949606062_aurora?zeroDateTimeBehavior=CONVERT_TO_NULL</DB_ADD>
-                <DB_USERNAME>u949606062_admin2</DB_USERNAME>
-                <DB_PASSWORD>Supergamo123.</DB_PASSWORD>
-                <SV_PORT>1012</SV_PORT>
-            </properties>
-        </action>
-        <action>
             <actionName>debug.single.main</actionName>
             <preAction>build-with-dependencies</preAction>
             <packagings>
@@ -56,16 +13,106 @@
             <properties>
                 <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.executable>java</exec.executable>
+                <exec.mainClass>${packageClassName}</exec.mainClass>
+                <DB_ADD>jdbc:mysql://srv1069.hstgr.io:3306/u949606062_aurora?zeroDateTimeBehavior=CONVERT_TO_NULL</DB_ADD>
+                <exec.classpathScope>${classPathScope}</exec.classpathScope>
                 <J_MAIL>auroraSupport@auroramarblegranite.com</J_MAIL>
                 <J_MAIL_PASS>Supergamo123.</J_MAIL_PASS>
-                <DB_ADD>jdbc:mysql://srv1069.hstgr.io:3306/u949606062_aurora?zeroDateTimeBehavior=CONVERT_TO_NULL</DB_ADD>
+                
+                
                 <DB_USERNAME>u949606062_admin2</DB_USERNAME>
                 <DB_PASSWORD>Supergamo123.</DB_PASSWORD>
+                <jpda.listen>true</jpda.listen>
+                <SV_PORT>1012</SV_PORT>
+            </properties>
+        </action>
+        <action>
+            <actionName>run</actionName>
+            <preAction>build-with-dependencies</preAction>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs>J_MAIL=kingofsignssupp@kingofsigns.net J_MAIL_PASS=Supergamo123. DB_ADD=jdbc:mysql://srv1069.hstgr.io:3306/u949606062_king?zeroDateTimeBehavior=CONVERT_TO_NULL DB_USERNAME=u949606062_kingAdmin DB_PASSWORD=Supergamo123. SV_PORT=1012</exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.appArgs></exec.appArgs>
+                <exec.mainClass>NameCheap.nameCheap.NameCheapApplication</exec.mainClass>
+                <exec.executable>java</exec.executable>
+                <J_MAIL>kingofsignssupp@kingofsigns.net</J_MAIL>
+                <J_MAIL_PASS>Supergamo123.</J_MAIL_PASS>
+                <DB_ADD>jdbc:mysql://srv1069.hstgr.io:3306/u949606062_king?zeroDateTimeBehavior=CONVERT_TO_NULL</DB_ADD>
+                <DB_USERNAME>u949606062_kingAdmin</DB_USERNAME>
+                <DB_PASSWORD>Supergamo123.</DB_PASSWORD>
+                <SV_PORT>1012</SV_PORT>
+            </properties>
+        </action>
+        <action>
+            <actionName>run.single.main</actionName>
+            <preAction>build-with-dependencies</preAction>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs></exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <J_MAIL>kingofsignssupp@kingofsigns.net</J_MAIL>
+                <J_MAIL_PASS>Supergamo123.</J_MAIL_PASS>
+                <Env.DB_ADD>u949606062_kingAdmin</Env.DB_ADD>
+                <Env.DB_PASSWORD>Supergamo123.</Env.DB_PASSWORD>
+                
+                
+                
                 <SV_PORT>1012</SV_PORT>
                 <exec.executable>java</exec.executable>
                 <exec.mainClass>${packageClassName}</exec.mainClass>
+                
                 <exec.classpathScope>${classPathScope}</exec.classpathScope>
+                
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs>J_MAIL=kingofsignssupp@kingofsigns.net J_MAIL_PASS=Supergamo123. DB_ADD=jdbc:mysql://srv1069.hstgr.io:3306/u949606062_king?zeroDateTimeBehavior=CONVERT_TO_NULL DB_USERNAME=u949606062_kingAdmin DB_PASSWORD=Supergamo123. SV_PORT=1012 -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.appArgs></exec.appArgs>
+                <exec.mainClass>NameCheap.nameCheap.NameCheapApplication</exec.mainClass>
+                <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
             </properties>
         </action>
+        <action>
+            <actionName>profile</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+            </goals>
+            <properties>
+                <exec.vmArgs>J_MAIL=kingofsignssupp@kingofsigns.net J_MAIL_PASS=Supergamo123. DB_ADD=jdbc:mysql://srv1069.hstgr.io:3306/u949606062_king?zeroDateTimeBehavior=CONVERT_TO_NULL DB_USERNAME=u949606062_kingAdmin DB_PASSWORD=Supergamo123. SV_PORT=1012</exec.vmArgs>
+                <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
+                <exec.mainClass>NameCheap.nameCheap.NameCheapApplication</exec.mainClass>
+                <exec.executable>java</exec.executable>
+                <exec.appArgs></exec.appArgs>
+            </properties>
+        </action>
+        
     </actions>

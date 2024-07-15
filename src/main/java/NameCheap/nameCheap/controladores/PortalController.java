@@ -125,7 +125,8 @@ public class PortalController {
     public String email(@RequestParam("name") String name, @RequestParam("phone") String phone,
             @RequestParam("email") String email, @RequestParam("msg") String msg, ModelMap map, HttpServletRequest request) {
         try {
-            String emailSender = "auroraSupport@auroramarblegranite.com";
+            String emailSender = "kingofsignssupp@kingofsigns.net";
+        
             String subject = "Client request for more information: ClientName --> " + name
                     + " ClientPhone --> " + phone + " ClientEmail --> " + email;
             emailServicio.enviarMensajeSencillo(emailSender, subject, msg, emailSender);

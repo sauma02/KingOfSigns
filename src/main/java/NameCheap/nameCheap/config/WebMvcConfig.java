@@ -24,7 +24,7 @@ public class WebMvcConfig {
         mailSender.setPort(465);
         
         
-        mailSender.setUsername("auroraSupport@auroramarblegranite.com");
+        mailSender.setUsername("kingofsignssupp@kingofsigns.net");
         mailSender.setPassword("Supergamo123.");
         
         
@@ -35,7 +35,7 @@ public class WebMvcConfig {
         props.put("mail.smtp.port", "465");
         props.put("mail.smtp.socketFactory.port", "465");
         props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.from", "auroraSupport@auroramarblegranite.com");
+        props.put("mail.smtp.from", "kingofsignssupp@kingofsigns.net");
         Session session = Session.getInstance(props);
         
         mailSender.setSession(session);
