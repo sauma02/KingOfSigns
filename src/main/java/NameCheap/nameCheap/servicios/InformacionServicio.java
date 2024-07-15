@@ -37,6 +37,7 @@ public class InformacionServicio {
             info.setTexto(texto);
             info.setTitulo(titulo);
             info.setIconoServicio(iconoServicio);
+            storageService.save(imagen);
             img.setNombreImagen(storageService.listOneFile(imagen).getOriginalFilename());
             imagenServicio.crearImagen(img, info, imagen);
             listImg.add(img);

@@ -328,7 +328,7 @@ public class AdminController {
             info.setImagen(imgLista);
             infoServicio.editarInfo(info);
             map.addAttribute("info", info);
-                System.out.println("Info: "+info);
+            System.out.println("info: "+info);
             map.addAttribute("errorStatus", "false");
             map.addAttribute("errorMessage", "Image deleted succesfully");
             return "redirect:/admin/adminPanel/registrarInfo/anadirImg/{"+info.getId()+"}";

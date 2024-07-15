@@ -32,7 +32,7 @@ public class ImagenServicio {
     public Imagen crearImagen(Imagen imagen, Informacion info, MultipartFile file) throws Exception {
         try {
             
-            Path ruta = Paths.get("src/main/resources/static/img/" + file.getOriginalFilename());
+            Path ruta = Paths.get("src/main/resources/static/images/" + file.getOriginalFilename());
 
             imagen.setRuta(ruta.toString());
             imagen.setTamano(file.getSize());

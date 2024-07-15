@@ -467,7 +467,8 @@ p.lorem_text {
 .service_section{
      width: 100%;
      float: left;
-     background-image: url(../images/service-bg.png);
+     
+     background-image: url(../images/background.jpg);
      height: auto;
      background-size: cover;
      background-repeat: no-repeat;
