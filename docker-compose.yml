@@ -8,7 +8,7 @@ services:
     environment:
       DB_USERNAME: u949606062_kingAdmin
       DB_PASSWORD: Supergamo123.
-      SV_PORT: 1012
+      SV_PORT: 1020
       SV_IP: 213.210.13.192
       DB_NAME: jdbc:mysql://srv1069.hstgr.io:3306/u949606062_king?zeroDateTimeBehavior=CONVERT_TO_NULL
       J_MAIL: kingofsignssupp@kingofsigns.net
